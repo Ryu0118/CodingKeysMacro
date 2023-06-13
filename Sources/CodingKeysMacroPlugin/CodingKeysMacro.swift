@@ -14,7 +14,7 @@ public struct CodingKeysMacro: MemberMacro {
             return []
         }
 
-        var properties = getProperties(decl: structDecl)
+        let properties = getProperties(decl: structDecl)
 
         guard diagnoseInvalidProperties(
             option: option,
