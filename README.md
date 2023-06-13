@@ -68,7 +68,7 @@ struct UserResponse: Codable {
 ```
 ### .custom
 ```Swift
-@CodingKeys(.custom(["id", "user_id"]))
+@CodingKeys(.custom(["id": "user_id"]))
 struct UserResponse: Codable {
     let id: String
     let age: Int
